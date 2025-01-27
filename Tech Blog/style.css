@@ -1,0 +1,539 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #242629;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;  
+    font-size: 1.7rem;
+
+    & span {
+        color: #7f5af0;
+    }
+
+    & h1:hover {
+        color: #7f5af0;
+        transition: background-color 0.3s ease;
+    }
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: #fffffe;
+    font-family:'Roboto', serif;
+}
+
+p {
+    color: #94a1b2;
+    font-family: 'montserrat', serif;
+}
+
+.nav-links {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.nav-links li {
+    list-style-type: none;
+    margin-right: 1rem;
+}
+
+.nav-links li a {
+    color: #7f5af0;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.nav-links li a:hover {
+    background-color: #7f5af0;
+    color: #fffffe;
+    padding: 5px;
+    border-radius: 6px;
+    transition: background-color 0.3s ease;
+}
+
+main {
+    margin-top: 20px;
+}
+
+.hero {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px;
+    border: #7f5af0 solid;        
+    }
+
+
+.hero:hover {
+    background-color: #010101;
+    padding: 20px;
+    border: black solid;
+    border-radius: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.hero a:hover {
+    color: white;
+    background-color: #7f5af0;
+    text-decoration: none;
+    transition: color 0.3s ease;
+    padding: 5px;
+    border-radius: 6px;
+    
+
+
+
+}
+
+.featured-products {
+    margin-top: 20px;
+
+    & h2 {
+        text-align: center;
+        font-size: 2rem;
+    }
+
+    & h2:hover {
+        color: #7f5af0;
+        transition: color 0.3s ease;
+    }
+}
+
+.featured-products {
+    text-align: center; 
+}
+
+.product-grid {
+    display: flex; 
+    flex-wrap: wrap;
+    justify-content: center; 
+    gap: 20px; 
+    flex-wrap: wrap; 
+}
+
+.product-card {
+    border: 1px solid #ddd; 
+    border-radius: 8px; 
+    padding: 10px; 
+    width: 600px; 
+    margin: 10px; 
+    height: 150px; 
+
+    &:hover {
+        background-color: black;
+        transition: background-color 0.3s ease;
+        border: solid 2px white;
+    }
+}
+
+.product-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;   
+    cursor: pointer;
+
+    &:hover {
+        color: #7f5af0;
+        transition: color 0.3s ease;
+    }
+}
+
+.product-card p {
+    font-size: 1.2rem;
+    color: #94a1b2;
+    margin-bottom: 10px;
+
+    &:hover {
+        color: #7f5af0;
+        font-weight: bold;
+        transition: color 0.3s ease;
+    }
+}
+
+.product-card a {
+    text-decoration: none;
+
+    &:hover {
+        color: white;
+        background-color: #7f5af0;
+        padding: 5px;
+        border-radius: 6px;
+        transition: background-color 0.3s ease;
+        transition: color 0.3s ease;
+    }
+}
+
+.services-overview {
+    margin-top: 20px;
+    text-align: center;
+
+    & h2 {
+        text-align: center;
+        font-size: 2rem;
+    }
+
+    & h2:hover {
+        color: #7f5af0;
+        transition: color 0.3s ease;
+    }
+}
+
+.services-overview a {
+    text-decoration: none;
+    color: #7f5af0;
+    font-size: 1.3rem;
+
+    &:hover {
+        color: white;
+        background-color: #7f5af0;
+        padding: 5px;
+        border-radius: 6px;
+        transition: background-color 0.3s ease;
+        transition: color 0.3s ease;
+    }
+}
+
+
+
+.services-grid {
+    display: flex;
+    flex-wrap: wrap; /* Allows items to wrap onto the next line */
+    justify-content: center; /* Centers the items in the grid */
+    gap: 20px; /* Adds space between items */
+}
+
+.service-item {
+    flex: 1 1 calc(25% - 20px); /* Default: 4 items in a row */
+    max-width: calc(25% - 20px); /* Ensures items stay within 4-column layout */
+    border: white solid 1px;
+    border-radius: 6px;
+    padding: 10px;
+
+    &:hover {
+        background-color: black;
+        transition: background-color 0.3s ease;
+        border: solid 2px white;
+    }
+}
+
+/* Responsive: 2 items per row */
+@media (max-width: 800px) {
+    .service-item {
+        flex: 1 1 calc(50% - 20px); /* 2 items per row */
+        max-width: calc(50% - 20px);
+    }
+}
+
+/* Responsive: 1 item per row */
+@media (max-width: 500px) {
+    .service-item {
+        flex: 1 1 100%; /* Single column layout */
+        max-width: 100%;
+    }
+}
+
+.about-preview {
+    margin-top: 20px;
+    text-align: center;
+
+    & h2 {
+        text-align: center;
+        font-size: 2rem;
+    }
+
+    & h2:hover {
+        color: #7f5af0;
+        transition: color 0.3s ease;
+    }
+
+    & p {
+        font-size: 1.3rem;
+        color: #94a1b2;
+        margin-bottom: 25px;
+        margin-top: 15px;
+    }
+    & p:hover {
+        color: #7f5af0;
+        font-weight: bold;
+        transition: color 0.3s ease;
+    }
+
+    & a {
+        text-decoration: none;
+        color: #7f5af0;
+        font-size: 1.3rem;
+        
+        &:hover {
+            color: white;
+            background-color: #7f5af0;
+            padding: 5px;
+            border-radius: 6px;
+            transition: background-color 0.3s ease;
+            transition: color 0.3s ease;
+    
+    }
+}
+}
+
+.latest-blog-posts {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.latest-blog-posts a {
+    text-decoration: none;
+    color: #7f5af0;
+    font-size: 1.3rem;
+
+    &:hover {
+        color: white;
+        background-color: #7f5af0;
+        padding: 5px;
+        border-radius: 6px;
+        transition: background-color 0.3s ease;
+        transition: color 0.3s ease;
+    }
+}
+
+.latest-blog-posts h2 {
+    font-size: 2rem;
+    text-align: center;
+
+    &:hover {
+        color: #7f5af0;
+        transition: color 0.3s ease;
+        text-decoration: underline;
+        cursor: pointer;
+    }
+}
+
+.blog-grid {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin: 30px;
+    gap: 40px;
+    align-items: center;
+}
+
+.blog-card {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 10px;
+    width: 100%;
+    margin: 10px;
+    text-align: center;
+
+    &:hover {
+        background-color: black;
+        transition: background-color 0.3s ease;
+        border: solid 2px white;
+    }
+
+    & h3 {
+        font-size: 1.5rem;
+        margin-bottom: 10px;
+        cursor: pointer;
+    }
+
+    & h3:hover {
+        color: #7f5af0;
+        transition: color 0.3s ease;
+    }
+
+    & p {
+        font-size: 1.2rem;
+        color: #94a1b2;
+        margin-bottom: 10px;
+    }
+    & p:hover {
+        color: #7f5af0;
+        font-weight: bold;
+        transition: color 0.3s ease;
+    }
+
+    & a {
+        text-decoration: none;
+        color: #7f5af0;
+        font-size: 1.3rem;
+        
+        &:hover {
+            color: white;
+            background-color: #7f5af0;
+            padding: 5px;
+            border-radius: 6px;
+            transition: background-color 0.3s ease;
+            transition: color 0.3s ease;
+        }
+    }
+}
+
+.newsletter-signup {
+    margin-top: 20px;
+    text-align: center;
+    & h2 {
+        font-size: 2rem;
+        text-align: center;
+    }
+
+    & h2:hover {
+        color: #7f5af0;
+        transition: color 0.3s ease;
+    }
+    
+}
+
+.newsletter-form {
+    margin: 20px;
+    & input[type="email"] {
+        width: 50%;
+        padding: 10px;
+        border-radius: 8px;
+        border: 1px solid #ddd;
+        font-size: 1.3rem;
+        margin-bottom: 10px;
+    }
+
+    & button {
+        background-color: #3498db;
+        color: white;
+        padding: 10px 20px;
+        border-radius: 8px;
+        border: none;
+        font-size: 1.3rem;
+        cursor: pointer;
+    }
+
+    & button:hover {
+        background-color: #007bff;
+        transition: background-color 0.3s ease;
+    }
+}
+
+.footer-content {
+    margin-top: 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    & h4 {
+        font-size: 2rem;
+        text-align: center;
+    }
+
+    & h4:hover {
+        color: #7f5af0;
+        transition: color 0.3s ease;
+    }
+
+    & p {
+        font-size: 1.3rem;
+        color: #94a1b2;
+        margin: 10px;
+    }
+
+    & p:hover {
+        font-size: 2.2rem;
+    }
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+
+    & a {
+        margin: 20px;
+    }
+
+    & a:hover {
+        transform: scale(1.2);
+        transition: color 0.3s ease;
+    }
+}
+
+.qklinks {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.qklinks a {
+    text-decoration: none;
+    color: #7f5af0;
+    font-size: 1.3rem;
+
+    &:hover {
+        color: white;
+        background-color: #7f5af0;
+        padding: 5px;
+        border-radius: 6px;
+        transition: background-color 0.3s ease;
+        transition: color 0.3s ease;
+    }
+}
+
+.qklinks li {
+    list-style: none;
+}
+
+.social-icons a {
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.social-icons a:hover {
+    transform: translateY(-5px);
+    color: #ff6347;
+}
+
+.cta-button:hover {
+    background-color: #ff6347;
+    transform: scale(1.1);
+}
+
+.product-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.hero h1 {
+    opacity: 0;
+    transform: translateY(150px);
+    animation: fadeInUp 1.5s forwards;
+}
+
+@keyframes fadeInUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

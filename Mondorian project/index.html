@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mondrian Project</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      display: grid;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background-color: #f4f4f4;
+    }
+
+    .container {
+      display: grid;
+      grid-template-columns: 320px 198px 153px 50px;
+      grid-template-rows: 414px 130px 155px 22px;
+      gap: 9px;
+      background-color: #000;
+      width: 748px;
+      height: 748px;
+      border: #000 solid 10px;
+    }
+
+    .item {
+      background-color: #F0F1EC;
+    }
+
+    .red {
+      background-color: #E72F24;
+    }
+
+    .white1 {
+      grid-column: span 3;
+    }
+
+    .white2 {
+      grid-row: span 2;
+    }
+
+    .white3 {
+      grid-area: 2 / 2 / 4 / 4;
+    }
+
+    .blue {
+      background-color: blue;
+      border-bottom: 10px solid #000;
+    }
+
+    .white4 {
+      grid-row: span 2;
+    }
+
+    .yellow {
+      background-color: #F9D01E;
+    }
+
+    .black {
+      background-color: #232629;
+    }
+
+    .container1 {
+            display: grid;
+            grid-template-columns: 150px 500px 50px;
+            grid-template-rows: 200px 400px 80px 80px ;
+            gap: 10px;
+            background-color: #000;
+            border: 10px solid black;
+            margin-right: 120px;
+            margin-top: 10px;
+        }
+
+        .itemm {
+            background-color: white;
+        }
+
+        .white11 {
+            background-color: white;
+            border-bottom: 10px solid black;
+        }
+
+        .redd {
+            background-color: red;
+            grid-column: 2 / 4;
+            grid-row: 1 / 3;
+        }
+
+        .white12 {
+            background-color: white;
+            grid-column: 1 / 2;
+            grid-row: 2 / 3;
+        }
+
+        .bluee {
+            background-color: blue;
+            grid-column: 1 / 2;
+            grid-row: 3 / 5;
+        }
+
+        .white13 {
+            background-color: white;
+            grid-column: 2 / 3;
+            grid-row: 3 / 5;
+        }
+
+        .white14 {
+            background-color: white;
+        }
+
+        .yelloww {
+            background-color: yellow;
+        }
+
+        .container2 {
+            display: grid;
+            background-color: black;
+            grid-template-columns: 400px 100px 200px 100px;
+            grid-template-rows: 80px 20px  20px 50px 50px 50px 50px 100px;
+            gap: 10px;
+            border: 5px solid black;
+            margin: 10px;
+        }
+
+        .itemmm {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 1.5rem;
+            font-weight: bold;
+            background-color: white;
+        }
+
+        .reddd {
+            grid-area: 1 / 1 / 7 / 2;
+            background-color: red;
+        }
+
+        .yellowww {
+            grid-column: span 1;
+            grid-row: span 2;
+            background-color: yellow;
+        }
+
+        .white21 {
+            grid-column: span 1;
+            grid-row: span 4;
+            background-color: white;
+        }
+
+        .red22 {
+            grid-column: span 1;
+            background-color: red;
+        }
+
+        .white23 {
+           grid-area: 3 / 2 / 7 / 3;
+        }
+
+        .purplee {
+            background-color: purple;
+        }
+
+        .white24 {
+            grid-area: 2 / 4 / 6 / 5;
+        }
+
+        .white25 {
+            grid-area: 7 / 1 / 9 / 2;
+        }
+
+        .purple26 {
+            grid-area: 7 / 2 / 9 / 3;
+            background-color: purple;
+        }
+
+        .yellow27 {
+            grid-area: 6 / 3 / 9 / 5;
+            background-color: yellow;
+        }
+
+    
+
+
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="item red"></div>
+    <div class=" item white1"></div>
+    <div class="item white2"></div>
+    <div class="item white3"></div>
+    <div class="item blue"></div>
+    <div class="item white4"></div>
+    <div class="item white5"></div>
+    <div class="item yellow"></div>
+    <div class="item black"></div>
+  </div>
+  <div class="container1">
+    <div class="itemm white11"></div>
+    <div class="itemm redd"></div>
+    <div class="itemm white12"></div>
+    <div class="itemm bluee"></div>
+    <div class="itemm white13"></div>
+    <div class="itemm white14"></div>
+    <div class="itemm yelloww"></div>
+  </div>
+  <div class="container2">
+    <div class="itemmm reddd"></div>
+    <div class="itemmm yellowww"></div>
+    <div class="itemmm white21"></div>
+    <div class="itemmm red22"></div>
+    <div class="itemmm white23"></div>
+    <div class="itemmm purplee"></div>
+    <div class="itemmm white24"></div>
+    <div class="itemmm white25"></div>
+    <div class="itemmm purple26"></div>
+    <div class="itemmm yellow27"></div>
+</div>
+</body>
+
+</html>
